@@ -48,30 +48,12 @@ android {
         versionCode 1
         versionName "1.0.0" 
 
-     
-
-        //(V2) 1.0.0 
-        /**
-        ESTANDAR DE VERSIONADO
-        
-            1.0.0
-            Primer número: Major versions (Cambio radical de las carácterísticas de la app)
-            Segundo número: Mid changes (Nuevas features, nuevos diseños, nuevas pantallas, etc)
-
-            Tercer número: Bugs, fixes, hot fixes 
-
-
-        Ejemplo NOTAS DE VERSION 
-            // V2 1.0.1 - Se solucionó el problema con el input de contraseña
-
-
-         */
     }
 
     buildTypes {
+        
+
         release {
-            // TODO: Add your own signing config for the release build.
-            // Signing with the debug keys for now, so `flutter run --release` works.
             signingConfig signingConfigs.debug
         }
     }
