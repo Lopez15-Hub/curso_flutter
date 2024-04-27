@@ -1,0 +1,84 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file('local.properties')
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withReader('UTF-8') { reader ->
+        localProperties.load(reader)
+    }
+}
+
+def flutterVersionCode = localProperties.getProperty('flutter.versionCode')
+if (flutterVersionCode == null) {
+    flutterVersionCode = '1'
+}
+
+def flutterVersionName = localProperties.getProperty('flutter.versionName')
+if (flutterVersionName == null) {
+    flutterVersionName = '1.0'
+}
+
+android {
+    namespace "com.example.curso_flutter"
+    compileSdk flutter.compileSdkVersion
+    ndkVersion flutter.ndkVersion
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+
+    defaultConfig {
+
+        applicationId "com.example.curso_flutter"
+        targetSdkVersion 34
+        minSdkVersion 16
+        versionCode 1
+        versionName "1.0.0" 
+
+     
+
+        //(V2) 1.0.0 
+        /**
+        ESTANDAR DE VERSIONADO
+        
+            1.0.0
+            Primer número: Major versions (Cambio radical de las carácterísticas de la app)
+            Segundo número: Mid changes (Nuevas features, nuevos diseños, nuevas pantallas, etc)
+
+            Tercer número: Bugs, fixes, hot fixes 
+
+
+        Ejemplo NOTAS DE VERSION 
+            // V2 1.0.1 - Se solucionó el problema con el input de contraseña
+
+
+         */
+    }
+
+    buildTypes {
+        release {
+            // TODO: Add your own signing config for the release build.
+            // Signing with the debug keys for now, so `flutter run --release` works.
+            signingConfig signingConfigs.debug
+        }
+    }
+}
+
+flutter {
+    source '../..'
+}
+
+dependencies {}
