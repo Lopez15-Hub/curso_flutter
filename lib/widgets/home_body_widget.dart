@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+//Un widget en cambio, no lleva scaffold
+// Por qué? Porque generalmente se insertan dentro de un scaffold
 class HomeBody extends StatelessWidget {
   const HomeBody({
     super.key,
