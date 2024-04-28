@@ -3,11 +3,11 @@
 
 //Atributos implicitos / explícitos
 
-import 'package:curso_flutter/models/injected_http_model.dart';
-import 'package:curso_flutter/models/person_model.dart';
-import 'package:curso_flutter/services/http_service.dart';
-import 'package:curso_flutter/services/payment_service.dart';
-import 'package:curso_flutter/services/user_service.dart';
+import 'package:curso_flutter/dart_course_basics/models/injected_http_model.dart';
+import 'package:curso_flutter/dart_course_basics/models/person_model.dart';
+import 'package:curso_flutter/dart_course_basics/services/http_service.dart';
+import 'package:curso_flutter/dart_course_basics/services/payment_service.dart';
+import 'package:curso_flutter/dart_course_basics/services/user_service.dart';
 
 final personTest = Person("Nekulman", "33.333.333", num: 0, name: "Marcos");
 

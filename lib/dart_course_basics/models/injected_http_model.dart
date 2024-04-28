@@ -1,6 +1,6 @@
 //Ejemplo de implementación
 
-import 'package:curso_flutter/models/http_to_inject_model.dart';
+import 'package:curso_flutter/dart_course_basics/models/http_to_inject_model.dart';
 
 class InjectedHttp implements HttpToInject {
   @override

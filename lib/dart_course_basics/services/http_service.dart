@@ -1,7 +1,7 @@
 //Herencia y Inyección
 
 //Ejemplo de extensión
-import 'package:curso_flutter/models/http_to_extend_model.dart';
+import 'package:curso_flutter/dart_course_basics/models/http_to_extend_model.dart';
 
 class HttpService extends HttpToExtend {
   //Override indica que los metodos de la clase padre, son sobreescritos.

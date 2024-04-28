@@ -5,7 +5,7 @@
 // Para declarar: const, final, var
 // Final solo se puede declarar en variables
 
-import 'package:curso_flutter/dart_functions_basics.dart';
+import 'package:curso_flutter/dart_course_basics/dart_functions_basics.dart';
 
 const pi = 3.147;
 var num = 10;
